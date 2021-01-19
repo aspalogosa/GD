@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacts</title>
+    <title>GeiaDEK</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/style.css" />
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://use.fontawesome.com/5905dc0cf2.js"></script>
   </head>
 
   <body>
@@ -96,230 +100,10 @@
         </div>
       </div>
     </header>
+
     <section>
-      <div class="main-wrapper">
-        <div>
-          <p class="heading-text text-center">
-            СВЪРЖЕТЕ СЕ С НАС ИЛИ НИ ПИШЕТЕ
-          </p>
-        </div>
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-5 border border-info text-center">
-              <div class="row">
-                <div class="col-4">
-                  <div class="main-text border label-start">ТЕЛЕФОН:</div>
-                  <div class="info-end info-text">02 955 60 33</div>
-                </div>
-                <div class="col-8 border">
-                  <form>
-                    <div class="form-group row">
-                      <label for="inputName" class="col-sm-2 col-form-label"
-                        >Име</label
-                      >
-                      <div class="col-sm-10">
-                        <input
-                          type="text"
-                          class="form-control input-border"
-                          id="inputName"
-                        />
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="inputEmail" class="col-sm-2 col-form-label"
-                        >email</label
-                      >
-                      <div class="col-sm-10">
-                        <input
-                          type="text"
-                          class="form-control input-border"
-                          id="inputEmail"
-                        />
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="inputPhone" class="col-sm-2 col-form-label"
-                        >Телефон</label
-                      >
-                      <div class="col-sm-10">
-                        <input
-                          type="password"
-                          class="form-control input-border"
-                          id="inputPhone"
-                        />
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="textArea" class="col-sm-2 col-form-label"
-                        >Съобщение</label
-                      >
-                      <div class="col-sm-10">
-                        <textarea
-                          type="text"
-                          class="form-control input-border"
-                          id="textArea"
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label
-                        for="reCaptcha"
-                        class="col-sm-2 col-form-label"
-                      ></label>
-                      <div
-                        class="g-recaptcha col-sm-10"
-                        data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S"
-                        data-callback="verifyRecaptchaCallback"
-                        data-expired-callback="expiredRecaptchaCallback"
-                        id="reCaptcha"
-                      ></div>
-                      <input
-                        class="form-control d-none"
-                        data-recaptcha="true"
-                        required
-                        data-error="Please complete the Captcha"
-                      />
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="container form-box bg-transparent">
-                <div class="row justify-content-center">
-                    <div class="col-12 heading-text text-center">
-                        СВЪРЖЕТЕ СЕ С НАС ИЛИ НИ ПИШЕТЕ
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-md-6">
-                        <div class="row">
-                            <div class="col-6 hei">
-                                <span class="main-text label-start">ТЕЛЕФОН:</span>
-                                <span class="main-text label-end">Име</span>
-                                <span class="info-end info-text">02 955 60 33</span>
-                            </div>
-                            <div class="col-6">
-                                <span><input type="text" class="input-field" /></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-md-6 px-0">
-                        <div class="row">
-                            <div class="col-6 hei">
-                                <span class="info-start info-text">088 837 5737</span>
-                                <span class="main-text label-end">email</span>
-                            </div>
-                            <div class="col-6">
-                                <span><input type="text" class="input-field" /></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-md-6">
-                        <div class="row">
-                            <div class="col-6 hei">
-                                <span class="main-text label-custom">EMAIL</span>
-                                <span class="main-text label-end">Телефон</span>
-                            </div>
-                            <div class="col-6">
-                                <span><input type="text" class="input-field" /></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-md-6">
-                        <div class="row">
-                            <div class="col-6 hei px-0">
-                                <span class="info-start info-text">geia_dek@abv.bg</span>
-                                <span class="main-text label-end">Съобщение</span>
-                            </div>
-                            <div class="col-6">
-                                <span>
-                    <textarea
-                      name="geia-dek"
-                      class="input-field"
-                      rows="3"
-                      cols="22"
-                    >
-                    </textarea>
-                  </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-md-6">
-                        <div class="row">
-                            <div class="col-6 hei px-0">
-                                <span class="main-text label-custom">АДРЕС</span>
-                            </div>
-                            <div class="col-6">
-                                <div class="g-recaptcha" data-sitekey="Your site key goes here"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-md-6">
-                        <div class="row">
-                            <div class="col-6 hei px-0">
-                                <span class="main-text label-start">АДРЕС</span>
-                                <span class="main-text label-end">Съобщение</span>
-                            </div>
-                            <div class="col-6 border">
-                                <button class="btn btn-info">Изпрати</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-      </div>
+      <h1 class="text-center py-4">NO CONTENT</h1>
     </section>
-
-    <div class="mapouter container-fluid">
-      <div class="gmap_canvas">
-        <iframe
-          width="1080"
-          height="440"
-          id="gmap_canvas"
-          src="https://maps.google.com/maps?q=sofia%2C%20ulitsa%20zelena%20livada%209&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
-        ></iframe
-        ><a href="https://2torrentz.net">torrtent</a>
-      </div>
-    </div>
-
-    <!-- <div class="map-box">
-      <div class="container-fluid px-0">
-        <div class="row">
-          <div class="col">
-            <div class="container-fluid google-map px-0">
-              <div class="map-responsive">
-                <iframe
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
-                  width="600"
-                  height="450"
-                  frameborder="0"
-                  style="border: 0;"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <div class="container">
       <div class="row">
@@ -407,6 +191,7 @@
         </div>
       </div>
     </div>
+
     <section>
       <footer>
         <div class="footer-box">
@@ -451,6 +236,11 @@
       </footer>
     </section>
 
+    <div class="container">
+      <div class="row">
+        <div class="col houses-pictures"></div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -466,5 +256,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
